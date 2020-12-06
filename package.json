@@ -3,6 +3,8 @@
   "license": "MIT",
   "name": "scully-plugin-ghost",
   "author": "Njarasoa Rakotozafy",
+  "homepage": "github.com/raknjarasoa/scully-plugin-ghost#Readme",
+  "repository": "github.com/raknjarasoa/scully-plugin-ghost",
   "module": "dist/scully-plugin-ghost.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
