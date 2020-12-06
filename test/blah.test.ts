@@ -1,7 +1,12 @@
-import { sum } from '../src';
+import { fetchGhostPosts } from '../src';
 
-describe('blah', () => {
-  it('works', () => {
-    expect(sum(1, 1)).toEqual(2);
+describe('fetchGhostPosts', () => {
+  it('fetch ghost public content should work', async () => {
+    const posts = await fetchGhostPosts({
+      url: 'https://demo.ghost.io',
+      key: '22444f78447824223cefc48062',
+      version: 'v3',
+    });
+    expect(posts.length > 0).toBe(true);
   });
 });
